@@ -1,9 +1,13 @@
 import "./App.css";
 
-import { useSelector, useDispatch } from "react-redux";
+import Home from "./Pages/Home";
 
 function App() {
-  return <div className="App">Best Crypto Currency Tracker </div>;
+  return (
+    <div>
+      <Home />
+    </div>
+  );
 }
 
 export default App;

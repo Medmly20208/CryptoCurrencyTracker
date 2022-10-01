@@ -3,6 +3,9 @@ import React from "react";
 //Images
 import dashboard from "../../../assets/Images/dashboard.png";
 
+//components
+import Partners from "./Partners";
+
 const index = () => {
   return (
     <section className="flex flex-col justify-center items-center mt-12 gap-8">
@@ -31,6 +34,7 @@ const index = () => {
       <div className="mb-12">
         <img src={dashboard} alt="dashboard" className="hidden sx:block" />
       </div>
+      <Partners />
     </section>
   );
 };

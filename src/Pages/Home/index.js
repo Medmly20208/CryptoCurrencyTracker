@@ -5,6 +5,7 @@ import Intro from "./Intro";
 import Advantages from "./Advantages";
 import Services from "./Services";
 import Steps from "./Steps";
+import Testimonials from "./Testimonials";
 
 const index = () => {
   return (
@@ -14,6 +15,7 @@ const index = () => {
       <Advantages />
       <Services />
       <Steps />
+      <Testimonials />
     </>
   );
 };

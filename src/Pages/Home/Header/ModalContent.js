@@ -8,22 +8,22 @@ const ModalContent = () => {
       <ul>
         <li className={listStyle}>
           <div className="hover:bg-gray-200 cursor-pointer p-2  rounded-md">
-            Products
+            <a href="#services"> Services</a>
           </div>
         </li>
         <li className={listStyle}>
           <div className="hover:bg-gray-200 cursor-pointer p-2  rounded-md">
-            Price
+            <a href="#steps">Steps</a>
           </div>
         </li>
         <li className={listStyle}>
           <div className="hover:bg-gray-200 cursor-pointer p-2  rounded-md">
-            Learn
+            <a href="#testimonials">Testimonials</a>
           </div>
         </li>
         <li className={listStyle}>
           <div className="hover:bg-gray-200 cursor-pointer p-2  rounded-md">
-            Support
+            <a href="#contactus">Contact Us</a>
           </div>
         </li>
 

@@ -28,7 +28,7 @@ const index = () => {
   ];
 
   return (
-    <div className="mt-12 mb-12 ">
+    <div className="mt-12 mb-12 " id="steps">
       <div className="flex  flex-col  items-center">
         <h1 className="text-[35px] font-bold ">
           Get Started in just Few minutes
@@ -38,9 +38,14 @@ const index = () => {
         </p>
       </div>
       <div className="flex flex-row justify-center items-center gap-4 flex-wrap mt-8 sx:justify-between ">
-        {steps.map((step) => {
+        {steps.map((step, index) => {
           return (
-            <StepItem title={step[0]} description={step[1]} logo={step[2]} />
+            <StepItem
+              key={index}
+              title={step[0]}
+              description={step[1]}
+              logo={step[2]}
+            />
           );
         })}
       </div>

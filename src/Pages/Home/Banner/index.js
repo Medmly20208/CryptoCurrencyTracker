@@ -5,7 +5,7 @@ import { Icon } from "@iconify/react";
 
 const index = () => {
   return (
-    <div className="flex justify-center ">
+    <div className="flex justify-center z-0">
       <div className="w-[90%] min-h-[200px] border rounded-[30px] mt-12 mb-12 bg-[#2752E7] text-white p-12 relative">
         <h1 className="text-[30px] mb-2 text-center sx:text-left">
           Join a new generation of investors

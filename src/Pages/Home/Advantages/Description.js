@@ -24,7 +24,10 @@ const Description = () => {
       <div className="flex flex-col gap-4">
         {Advantages.map((Item, index) => {
           return (
-            <div className="flex gap-8 w-[100%] pb-6 pt-6 border-b-2 border-gray-100 sx:w-[60%]">
+            <div
+              className="flex gap-8 w-[100%] pb-6 pt-6 border-b-2 border-gray-100 sx:w-[60%]"
+              key={index}
+            >
               <div className="text-[#2752E7] text-[30px] font-bold">
                 0{index + 1}
               </div>

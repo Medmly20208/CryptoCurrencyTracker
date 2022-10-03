@@ -17,12 +17,12 @@ const index = () => {
 
   return (
     <div>
-      <div className="flex justify-center">
+      <div className="flex justify-center" id="testimonials">
         <h1 className="text-[40px] font-bold mt-12">What People Are Saying</h1>
       </div>
       <div className="mt-12 flex flex-row flex-wrap justify-center">
-        {Testimonials.map((Item) => {
-          return <Testimonial content={Item} />;
+        {Testimonials.map((Item, index) => {
+          return <Testimonial key={index} content={Item} />;
         })}
       </div>
     </div>

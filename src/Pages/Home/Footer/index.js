@@ -49,26 +49,38 @@ const index = () => {
     "akar-icons:youtube-fill",
   ];
   return (
-    <div className="flex justify-around gap-4 mb-12 flex-wrap">
-      <div>
-        <img src={Logo} alt="logo" className="text-[2px]" />
-        <p className="text-gray-600">Take your crypto to next level</p>
-        <div className="flex gap-4">
-          {SocialMediaIcons.map((Item) => {
-            return (
-              <Icon
-                icon={Item}
-                className="text-[30px] mt-5 cursor-pointer text-gray-700"
-              />
-            );
-          })}
+    <footer id="contactus">
+      <div className="flex justify-around gap-4 mb-12 flex-wrap border-b border-gray-500 pb-12">
+        <div>
+          <img src={Logo} alt="logo" className="text-[2px]" />
+          <p className="text-gray-600">Take your crypto to next level</p>
+          <div className="flex gap-4">
+            {SocialMediaIcons.map((Item, index) => {
+              return (
+                <Icon
+                  key={index}
+                  icon={Item}
+                  className="text-[30px] mt-5 cursor-pointer text-gray-700"
+                />
+              );
+            })}
+          </div>
         </div>
-      </div>
 
-      {FooterContent.map((Item) => {
-        return <Column title={Item[0]} content={Item.slice(1, Item.length)} />;
-      })}
-    </div>
+        {FooterContent.map((Item, index) => {
+          return (
+            <Column
+              key={index}
+              title={Item[0]}
+              content={Item.slice(1, Item.length)}
+            />
+          );
+        })}
+      </div>
+      <div className="text-center text-gray-500 mb-12">
+        © Design by Dliya’ Zarror Nibros/ built by Mohamed Moulay
+      </div>
+    </footer>
   );
 };
 

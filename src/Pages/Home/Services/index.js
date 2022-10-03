@@ -28,10 +28,11 @@ const index = () => {
   ];
 
   return (
-    <div>
+    <div id="services">
       {services.map((Service, index) => {
         return (
           <ServiceItem
+            key={index}
             title={Service[0]}
             description={Service[1]}
             logo={Service[2]}

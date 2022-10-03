@@ -12,8 +12,8 @@ const index = () => {
       <div className="w-[100%] sx:w-[50%]">
         <Description />
       </div>
-      <div className="w-[100%] sx:w-[50%]">
-        <img src={AdvantageImage} alt="Iphones" className="w-full" />
+      <div className="w-[100%]  sx:w-[50%] ">
+        <img src={AdvantageImage} alt="Iphones" className="w-full " />
       </div>
     </section>
   );

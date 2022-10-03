@@ -7,10 +7,18 @@ const Navbar = () => {
   return (
     <div className="hidden sx:block">
       <ul className="flex flex-row justify-center items-center gap-8">
-        <li className={NavItemStyle}>Products</li>
-        <li className={NavItemStyle}>Price</li>
-        <li className={NavItemStyle}>Learn</li>
-        <li className={NavItemStyle}>Support</li>
+        <li className={NavItemStyle}>
+          <a href="#services"> Services</a>
+        </li>
+        <li className={NavItemStyle}>
+          <a href="#steps">Steps</a>
+        </li>
+        <li className={NavItemStyle}>
+          <a href="#testimonials">Testimonials</a>
+        </li>
+        <li className={NavItemStyle}>
+          <a href="#contactus">Contact Us</a>
+        </li>
       </ul>
     </div>
   );

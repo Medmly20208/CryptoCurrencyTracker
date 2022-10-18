@@ -1,13 +1,14 @@
 import React from "react";
 
 const ServiceItem = (props) => {
-  const rowDirection = props.index % 2 === 0 ? "-reverse" : " "; //make a section service in postion and the next service section in the opposite position
+  const rowDirection =
+    props.index % 2 === 0 ? " flex-row-reverse	" : " flex-row "; //make a section service in postion and the next service section in the opposite position
 
   const ElementStyle =
-    "flex flex-col justify-between items-center mt-20 gap-2 sx:flex-row" +
-    rowDirection;
+    "flex " +
+    rowDirection +
+    "justify-between items-center mt-20 gap-2 sf:flex-col";
 
-  console.log(ElementStyle);
   return (
     <div className={ElementStyle}>
       <div className="w-[100%] sx:w-[40%]">
